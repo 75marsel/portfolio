@@ -21,19 +21,19 @@
             <h4 class="alert-heading">Jeric Marcel's Portfolio was moved!</h4>
             <p>My portfolio is now hosted free on pythonanywhere.com and is now using Django Web Framework as backend. This is for a complete overhaul with a proper frontend soon!</p>
             <hr>
-            <p class="mb-0">If you are not redirected after <span id="countdown">20</span>s, <a href="https://75marsel.pythonanywhere.com/">click here</a>.</p>
+            <p class="mb-0">If you are not redirected to the new portfolio after <span id="countdown">20</span>s, <a href="https://75marsel.pythonanywhere.com/">click here</a>.</p>
           </div>
     </div> 
 
     <script>
-        let countdownInterval = 20;
+        let countdownInterval = 10;
         const countdownElement = document.getElementById('countdown');
 
         const countdownTimer = setInterval(() => {
             countdownInterval--;
             countdownElement.textContent = countdownInterval;
 
-            if (countdownInterval <= 0) {
+            if (countdownInterval == 0) {
                 window.location.href = "https://75marsel.pythonanywhere.com/";
             }
         }, 1000);
